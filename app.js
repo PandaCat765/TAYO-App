@@ -120,14 +120,30 @@ const places = [
   { id: "secwalk", name: "SEC Walk", category: "landmarks", area: "north", x: 32, y: 25, short: "Busy walkway and org booth area.", why: "This is where many org announcements, booths, and first-week signups happen.", directions: ["From Leong Hall, walk toward the open field.", "Follow the covered path with student booths.", "Look for the benches and org tables."], nearby: ["Rec Week for Orgs", "Gonzaga Cafeteria", "SEC B Vending"] },
   { id: "gonzaga", name: "Gonzaga Cafeteria", category: "food", area: "central", x: 47, y: 43, short: "Reliable place to eat between classes.", why: "Good first stop when you do not know where to eat yet.", directions: ["From Leong Hall, walk past SEC Walk.", "Continue toward the central food area.", "Enter the cafeteria beside the covered walkway."], nearby: ["JSEC", "SEC Walk", "Matteo Ricci Study Hall"] },
   { id: "jsec", name: "JSEC Food Stalls", category: "food", area: "central", x: 57, y: 50, short: "Student-run food stalls.", why: "Useful for fast meals, student businesses, and casual meetups.", directions: ["From Gonzaga, follow the path toward the student enterprise stalls.", "Look for clustered food booths and outdoor seating.", "Check stall hours before going late."], nearby: ["Gonzaga Cafeteria", "MVP Center", "Matteo Ricci Study Hall"] },
-  { id: "rizal", name: "New Rizal Library", category: "study", area: "central", x: 69, y: 63, short: "Main study and research space.", why: "Good for board games, waiting between classes, and quiet study blocks.", directions: ["From MVP, walk toward the large library building.", "Follow signs for the entrance lobby.", "Use your student ID at entry."], nearby: ["Board Games in New Rizal Library", "Arete", "Printing"] },
+  { id: "rizal", name: "New Rizal Library", category: "study", area: "central", x: 61, y: 61, short: "Main study and research space.", why: "Good for board games, waiting between classes, and quiet study blocks.", directions: ["From Leong Hall, walk down the central spine toward MVP.", "Continue toward the large library building beside the open campus walk.", "Enter through the lobby and prepare your student ID."], nearby: ["Board Games in New Rizal Library", "Arete", "Printing"] },
+  { id: "oldrizal", name: "Old Rizal Library", category: "study", area: "central", x: 47, y: 57, short: "Older library landmark and quieter study reference point.", why: "Useful when students mention old Rizal or nearby mini-theater locations.", directions: ["From Leong Hall, follow the central walk toward MVP.", "Continue past the middle campus buildings toward the old library area.", "Use Google Maps if you need the exact room or entrance."], nearby: ["Rizal Mini Theater", "MVP Center", "New Rizal Library"] },
+  { id: "som405", name: "SOM 405 Business Resource Center", category: "study", area: "central", x: 70, y: 47, short: "Business resource and study space inside SOM.", why: "Helpful for SOM students looking for a focused work area.", directions: ["From Leong Hall, walk toward SEC Walk and Gonzaga.", "Continue to the JGSOM building.", "Go to SOM 405; exact internal route can be confirmed later."], nearby: ["JGSOM Building", "JSEC", "Gonzaga Cafeteria"] },
   { id: "arete", name: "Arete", category: "student-life", area: "north", x: 78, y: 58, short: "Arts, talks, and exhibitions.", why: "Good place for creative events and culture-related activities.", directions: ["From Gate 3, follow the road toward the arts building.", "Look for the open lobby and exhibition area.", "Check event room details before entering."], nearby: ["Arete Museum Viewing", "Leong Hall", "Rizal Library"] },
   { id: "bell", name: "Bellarmine Field", category: "student-life", area: "central", x: 52, y: 76, short: "Open field and large event point.", why: "Often used for concerts, wellness events, and outdoor meetups.", directions: ["From MVP, walk toward the open field area.", "Stay on the paved path until the field opens up.", "Meet near the visible benches."], nearby: ["Love Box Concert", "MVP Center", "Rizal Library"] },
   { id: "gym", name: "Blue Eagle Gym", category: "student-life", area: "south", x: 74, y: 78, short: "Sports and larger student events.", why: "Useful for PE, sports events, and high-energy student gatherings.", directions: ["From Rizal Library, follow the path toward the sports facilities.", "Use the main entrance facing the court side.", "Check whether an event uses a side entrance."], nearby: ["MeCO Fun Run", "Cov Courts Basketball", "Bellarmine Field"] },
-  { id: "gate3", name: "Gate 3", category: "transport", area: "north", x: 84, y: 35, short: "Off-campus meeting point.", why: "Used for plans that start outside campus, like tennis at Valle Verde.", directions: ["From Leong Hall, walk toward the driveway.", "Follow the road signs toward Gate 3.", "Wait near the marked loading area."], nearby: ["Tennis at Valle Verde", "Arete", "Leong Hall"] },
+  { id: "gate3", name: "Gate 3", category: "transport", area: "north", x: 84, y: 35, short: "Off-campus meeting point with tricycles to nearby areas.", why: "Used for plans that start outside campus. Tricycles there can bring students to nearby areas such as Torre and UPTC.", directions: ["From Leong Hall, walk toward the driveway.", "Follow the road signs toward Gate 3.", "Wait near the marked loading area or tricycle queue."], nearby: ["Tennis at Valle Verde", "Torre", "UPTC"] },
   { id: "zen", name: "Zen Garden", category: "student-life", area: "central", x: 42, y: 58, short: "Outdoor pause point for smaller events.", why: "Good for flexible org events that can feel calm or social.", directions: ["From SEC Walk, continue toward the greener central courtyard.", "Look for the quieter garden area.", "Stay near the main path if meeting someone."], nearby: ["Moonrabbit", "MVP Center", "Gonzaga Cafeteria"] },
-  { id: "rbr", name: "RBR", category: "student-life", area: "central", x: 35, y: 72, short: "Org and event room area.", why: "Useful for rec week, talks, and student activity programming.", directions: ["From MVP, follow the central path toward the event rooms.", "Look for the RBR signage.", "Check the room number before entering."], nearby: ["Rec Week for Orgs", "MVP Center", "Bellarmine Field"] },
-  { id: "cov", name: "Covered Courts", category: "student-life", area: "south", x: 62, y: 83, short: "Basketball and informal sports point.", why: "A clear meet-up place for casual games and active events.", directions: ["From Blue Eagle Gym, walk toward the court side.", "Look for the covered court area.", "Meet near the entrance closest to the path."], nearby: ["Cov Courts Basketball", "Blue Eagle Gym", "Bellarmine Field"] }
+  { id: "rbr", name: "Red Brick Road", category: "student-life", area: "central", x: 35, y: 72, short: "Org and event room area, usually called RBR.", why: "Useful for rec week, talks, and student activity programming.", directions: ["From MVP, follow the central path toward the event rooms.", "Look for the Red Brick Road or RBR signage.", "Check the room number before entering."], nearby: ["Rec Week for Orgs", "MVP Center", "Bellarmine Field"] },
+  { id: "cov", name: "Covered Courts", category: "student-life", area: "south", x: 62, y: 83, short: "Basketball and informal sports point.", why: "A clear meet-up place for casual games and active events.", directions: ["From Blue Eagle Gym, walk toward the court side.", "Look for the covered court area.", "Meet near the entrance closest to the path."], nearby: ["Cov Courts Basketball", "Blue Eagle Gym", "Bellarmine Field"] },
+  { id: "northpark", name: "North Carpark", category: "parking", area: "north", x: 18, y: 29, short: "Parking near the north academic buildings.", why: "Useful for events near Leong, SEC Walk, and Gonzaga.", directions: ["From Leong Hall, walk toward the north side driveway.", "Follow campus signs for North Carpark.", "Exact slot availability is unknown in this prototype."], nearby: ["SEC Walk", "Gonzaga", "Leong Hall"] },
+  { id: "northwestpark", name: "Northwest Carpark", category: "parking", area: "north", x: 15, y: 48, short: "Parking near the west side of campus.", why: "Helpful when entering from the northwest side or walking toward MVP.", directions: ["From Leong Hall, head west along the main campus walk.", "Continue toward the carpark side road.", "Exact driving entrance is unknown in this prototype."], nearby: ["MVP Center", "Rizal Library", "Faura Hall"] },
+  { id: "aretepark", name: "Areté Parking", category: "parking", area: "north", x: 76, y: 54, short: "Parking option closest to Areté.", why: "Best for talks, exhibits, and creative events at Areté.", directions: ["From Areté, follow the nearby driveway toward the parking area.", "For walking from Leong Hall, go through the north campus path.", "Exact parking entrance is unknown in this prototype."], nearby: ["Areté", "Gate 3", "Rizal Library"] },
+  { id: "uppercovpark", name: "Upper Covered Courts Parking", category: "parking", area: "south", x: 68, y: 77, short: "Parking near sports facilities.", why: "Useful for Blue Eagle Gym and covered courts events.", directions: ["From Blue Eagle Gym, walk toward the upper court-side parking area.", "Use the paved path near the sports facilities.", "Exact driving entrance is unknown in this prototype."], nearby: ["Blue Eagle Gym", "Covered Courts"] },
+  { id: "lowercovpark", name: "Lower Covered Courts Parking", category: "parking", area: "south", x: 56, y: 86, short: "Lower parking option by the courts.", why: "Good backup parking for sports and late afternoon events.", directions: ["From the Covered Courts, walk downhill toward the lower court-side parking.", "Stay on the main paved path.", "Exact driving entrance is unknown in this prototype."], nearby: ["Covered Courts", "Bellarmine Field"] },
+  { id: "irhprint", name: "IRH Printing", category: "printing", area: "central", x: 66, y: 57, short: "Printing option near the library and central campus.", why: "Useful before events that require forms, tickets, or printed requirements.", directions: ["From Leong Hall, walk toward New Rizal Library.", "Look for the IRH-side printing option near central campus.", "Exact stall placement is unknown in this prototype."], nearby: ["Rizal Library", "Areté"] },
+  { id: "secaprint", name: "SEC-A First Floor Printing", category: "printing", area: "north", x: 59, y: 39, short: "Printing option on the first floor of SEC-A.", why: "Convenient for students near SEC Walk and north campus.", directions: ["From Leong Hall, walk toward SEC Walk.", "Enter SEC-A and go to the first floor printing area.", "Exact room or stall name is unknown in this prototype."], nearby: ["SEC Walk", "Gonzaga", "Leong Hall"] },
+  { id: "ashop", name: "A-Shop", category: "printing", area: "central", x: 52, y: 67, short: "Printing and student supply stop.", why: "Useful for quick printing, school supplies, and event materials.", directions: ["From Leong Hall, walk toward MVP and the central student services area.", "Look for A-Shop signage.", "Exact internal placement is unknown in this prototype."], nearby: ["MVP Center", "Bellarmine Field"] },
+  { id: "infirmary", name: "Infirmary / UHS College", category: "misc", area: "central", x: 31, y: 43, short: "Health services at SS-105, G/F Social Sciences Building.", why: "Go here for college health concerns, basic medical help, and UHS guidance.", contact: "Contact UHS-College", phone: "+63 918 944 5997 (Smart), +63 966 911 4141 (Globe)", email: "", officeHours: "Unknown", directions: ["From Leong Hall, walk toward the Social Sciences Building.", "Go to the ground floor and look for SS-105.", "If urgent, call UHS-College using the listed Smart or Globe number."], nearby: ["Social Sciences Building", "Leong Hall"] },
+  { id: "sohdean", name: "SOH Dean's Office", category: "offices", area: "central", x: 37, y: 52, short: "School of Humanities dean's office at G/F De la Costa Hall.", why: "For SOH concerns and dean's office inquiries.", contact: "Dr. Patricia P. Lambino, SOH Dean", phone: "426-6001 loc. 5301 and 5303", email: "dean.soh@ateneo.edu", officeHours: "8:00 AM-5:00 PM", directions: ["From Leong Hall, follow the central walk toward De la Costa Hall.", "Enter the ground floor.", "Ask for the SOH Dean's Office."], nearby: ["De la Costa Hall", "Modern Languages", "Philosophy"] },
+  { id: "finearts", name: "Fine Arts Department", category: "offices", area: "north", x: 25, y: 55, short: "Fine Arts office at 2/F right wing of Areté.", why: "For Fine Arts advisement, IPS, and department concerns.", contact: "Ms. Roxan Cuacoy, Department Secretary", phone: "8426-6001 local 5330", email: "finearts.soh@ateneo.edu", officeHours: "8:00 AM-7:00 PM", directions: ["From Leong Hall, head toward Areté.", "Go to the second floor right wing.", "Look for the Fine Arts office."], nearby: ["Areté", "Areté Parking"] },
+  { id: "englishdept", name: "English Department", category: "offices", area: "central", x: 39, y: 54, short: "English Department at G/F De la Costa Hall.", why: "For English Department questions and course-related concerns.", contact: "Peachie Reyes, Administrative Assistant", phone: "8426-6001 local 5310", email: "english.soh@ateneo.edu", officeHours: "8:00 AM-5:00 PM", directions: ["From Leong Hall, walk toward De la Costa Hall.", "Enter the ground floor.", "Look for the English Department office."], nearby: ["De la Costa Hall", "SOH Dean's Office"] },
+  { id: "qmit", name: "QMIT Department", category: "offices", area: "central", x: 69, y: 45, short: "QMIT office at SOM 504, 5/F JGSOM Building.", why: "For Quantitative Methods and Information Technology department concerns.", contact: "Mr. Alyson L. Yap, Department Chair; Ms. Cristy M. Esteban, Department Secretary", phone: "0931-057-5817, 8426-6001 loc. 5541", email: "ayap@ateneo.edu, qmit.jgsom@ateneo.edu, cmesteban@ateneo.edu", officeHours: "9:00 AM-6:00 PM", directions: ["From Leong Hall, walk toward Gonzaga and JGSOM.", "Go to the fifth floor.", "Look for SOM 504."], nearby: ["JGSOM Building", "SOM 405 Business Resource Center", "JSEC"] },
+  { id: "legalmanagement", name: "Legal Management Program", category: "offices", area: "central", x: 68, y: 43, short: "Legal Management office at SOM 502, 5/F JGSOM Building.", why: "For Legal Management program questions.", contact: "Atty. Rhea Quimson, Program Director; Ms. Ma. Isabel Nucasa, Program Secretary", phone: "0969-1402-533, 8426-6001 loc. 5548", email: "lm.jgsom@ateneo.edu, mnucasa@ateneo.edu", officeHours: "Unknown", directions: ["From Leong Hall, walk toward JGSOM.", "Go to the fifth floor.", "Look for Room 502."], nearby: ["JGSOM Building", "QMIT Department"] }
 ];
 
 const placeMapTargets = {
@@ -136,18 +152,48 @@ const placeMapTargets = {
   gonzaga: "Gonzaga Hall Cafeteria, Ateneo de Manila University, Quezon City",
   jsec: "JSEC, Ateneo de Manila University, Quezon City",
   rizal: "New Rizal Library, Ateneo de Manila University, Quezon City",
+  oldrizal: "Old Rizal Library, Ateneo de Manila University, Quezon City",
+  som405: "John Gokongwei School of Management Ateneo de Manila University, Quezon City",
   arete: "Areté Ateneo, Quezon City",
   bell: "Bellarmine Field, Ateneo de Manila University, Quezon City",
   gym: "Blue Eagle Gym, Ateneo de Manila University, Quezon City",
   gate3: "Gate 3, Ateneo de Manila University, Quezon City",
   zen: "Zen Garden, Ateneo de Manila University, Quezon City",
-  rbr: "Rizal Mini Theater RBR, Ateneo de Manila University, Quezon City",
-  cov: "Covered Courts, Ateneo de Manila University, Quezon City"
+  rbr: "Red Brick Road Ateneo de Manila University, Quezon City",
+  cov: "Covered Courts, Ateneo de Manila University, Quezon City",
+  infirmary: "Social Sciences Building Ateneo de Manila University, Quezon City",
+  sohdean: "De la Costa Hall Ateneo de Manila University, Quezon City",
+  finearts: "Areté Ateneo de Manila University, Quezon City",
+  englishdept: "De la Costa Hall Ateneo de Manila University, Quezon City",
+  qmit: "John Gokongwei School of Management Ateneo de Manila University, Quezon City",
+  legalmanagement: "John Gokongwei School of Management Ateneo de Manila University, Quezon City"
 };
 
 places.forEach((place) => {
   place.mapQuery = placeMapTargets[place.id] || `${place.name}, Ateneo de Manila University, Quezon City`;
 });
+
+const categoryPinLabels = {
+  food: "F",
+  transport: "T",
+  study: "S",
+  "student-life": "L",
+  parking: "P",
+  printing: "Pr",
+  offices: "O",
+  misc: "Mi",
+  events: "E",
+  landmarks: "Mk"
+};
+
+const monthMeta = {
+  Aug: { year: 2026, monthIndex: 7 },
+  Sep: { year: 2026, monthIndex: 8 },
+  Oct: { year: 2026, monthIndex: 9 },
+  Nov: { year: 2026, monthIndex: 10 },
+  Dec: { year: 2026, monthIndex: 11 },
+  Jan: { year: 2027, monthIndex: 0 }
+};
 
 const events = [
   { id: "tennis", title: "Tennis at Valle Verde", type: "social", location: "Outside Gate 3 to Valle Verde", area: "outside", day: "Mon", time: "4:30 PM", deadline: "Mon 12:00 PM", interests: ["sports", "friends"], subtags: ["tennis", "beginner games", "arrive together"], energy: "outgoing", commitment: "1.5 hours", beginner: true, alone: false, group: "small", schoolTags: ["SOM", "SOSE", "SOH", "SOSS"], personalityFit: ["active", "outgoing"], expect: "Meet at Gate 3, walk or ride together to Valle Verde, then rotate beginner-friendly games.", goodFor: "Students who want an active plan outside campus but prefer arriving with a group.", bring: "Rubber shoes, water, and racket if you have one.", description: "Outgoing social gathering for students who want a sporty first hangout." },
@@ -162,6 +208,68 @@ const events = [
   { id: "meco", title: "MeCO Fun Run", type: "org", location: "Blue Eagle Gym", area: "south", day: "Sat", time: "6:00 AM", deadline: "Fri 5:00 PM", interests: ["sports", "wellness", "orgs"], subtags: ["fun run", "movement", "beginner games"], energy: "outgoing", commitment: "Morning event", beginner: true, alone: false, group: "large", schoolTags: ["SOM", "SOSE", "SOH", "SOSS"], personalityFit: ["active", "outgoing"], expect: "Meet early near Blue Eagle Gym, warm up, run as a group, then cool down after.", goodFor: "Students who want a high-energy org event with a clear shared activity.", bring: "Running shoes, water, towel, and change of shirt.", description: "Outgoing MeCO org event centered on movement and team energy." }
 ];
 
+const additionalEventSeeds = [
+  ["orgfair", "Org Fair Booth Crawl", "org", "SEC Walk", "central", "Aug", "Mon", "11:00 AM", ["orgs", "friends"], ["rec week", "advocacy"], "both", "outdoor", "open"],
+  ["openmic", "Ateneo Open Mic Night", "social", "MVP Roofdeck", "central", "Aug", "Tue", "6:00 PM", ["music", "friends"], ["acoustic", "small group"], "chill", "outdoor", "open"],
+  ["filmnight", "Campus Film Night", "social", "Rizal Mini Theater", "central", "Aug", "Wed", "5:30 PM", ["culture", "arts"], ["performances", "low pressure"], "chill", "indoor", "open"],
+  ["startup", "Student Startup Mixer", "org", "JGSOM Building", "central", "Aug", "Thu", "4:30 PM", ["orgs", "food"], ["business", "talks"], "outgoing", "indoor", "org-exclusive"],
+  ["poetry", "Poetry Circle", "social", "New Rizal Library", "central", "Aug", "Fri", "3:00 PM", ["literature", "friends"], ["poetry", "book clubs"], "chill", "indoor", "open"],
+  ["volunteer", "Volunteer Sign-up Day", "org", "MVP Center", "central", "Sep", "Mon", "10:30 AM", ["orgs", "culture"], ["advocacy", "rec week"], "both", "indoor", "open"],
+  ["coffeechat", "Coffee Chat for Freshies", "social", "Gonzaga Cafeteria", "central", "Sep", "Tue", "2:00 PM", ["food", "friends"], ["coffee", "small group"], "chill", "indoor", "open"],
+  ["designjam", "Design Jam", "org", "Areté", "north", "Sep", "Wed", "4:00 PM", ["arts", "orgs"], ["design", "creative writing"], "both", "indoor", "org-exclusive"],
+  ["pickleball", "Pickleball Trial Games", "social", "Covered Courts", "south", "Sep", "Thu", "5:00 PM", ["sports", "friends"], ["pickleball", "beginner games"], "outgoing", "indoor", "open"],
+  ["foodcrawl", "JSEC Food Crawl", "social", "JSEC Food Stalls", "central", "Sep", "Fri", "12:30 PM", ["food", "friends"], ["snacks", "restaurants"], "outgoing", "outdoor", "open"],
+  ["wellnesswalk", "Wellness Walk", "social", "Bellarmine Field", "central", "Sep", "Sat", "7:00 AM", ["wellness", "friends"], ["walking", "movement"], "chill", "outdoor", "open"],
+  ["creator", "Creator Talk Night", "org", "Leong Hall", "north", "Oct", "Mon", "5:00 PM", ["food", "arts"], ["creator talks", "business"], "chill", "indoor", "open"],
+  ["theaterlab", "Theater Lab Preview", "org", "Areté", "north", "Oct", "Tue", "6:30 PM", ["arts", "culture"], ["theater", "performances"], "both", "indoor", "org-exclusive"],
+  ["basketdrop", "Basketball Drop-in", "social", "Covered Courts", "south", "Oct", "Wed", "5:30 PM", ["sports", "friends"], ["basketball", "meet new people"], "outgoing", "indoor", "open"],
+  ["bookswap", "Book Swap Hour", "social", "New Rizal Library", "central", "Oct", "Thu", "2:00 PM", ["literature", "friends"], ["fiction", "book clubs"], "chill", "indoor", "open"],
+  ["advocacy", "Advocacy Roundtable", "org", "MVP Center", "central", "Oct", "Fri", "3:30 PM", ["orgs", "culture"], ["advocacy", "talks"], "chill", "indoor", "org-exclusive"],
+  ["culturefair", "Culture Fair", "org", "Zen Garden", "central", "Nov", "Mon", "4:00 PM", ["culture", "friends"], ["campus traditions", "performances"], "both", "outdoor", "open"],
+  ["runclub", "Sunrise Run Club", "social", "Blue Eagle Gym", "south", "Nov", "Tue", "6:00 AM", ["sports", "wellness"], ["fun run", "movement"], "outgoing", "outdoor", "open"],
+  ["museumtalk", "Museum Conversation", "social", "Areté", "north", "Nov", "Wed", "1:00 PM", ["arts", "culture"], ["museum", "exhibits"], "chill", "indoor", "open"],
+  ["strategygames", "Strategy Games Table", "social", "New Rizal Library", "central", "Nov", "Thu", "4:00 PM", ["boardgames", "friends"], ["strategy", "casual tables"], "chill", "indoor", "open"],
+  ["concertfield", "Field Concert Meetup", "org", "Bellarmine Field", "central", "Nov", "Fri", "6:30 PM", ["music", "friends"], ["concert", "field event"], "outgoing", "outdoor", "org-exclusive"],
+  ["studybuddy", "Study Buddy Matching", "social", "Matteo Ricci Study Hall", "central", "Dec", "Mon", "3:00 PM", ["friends", "wellness"], ["low pressure", "small group"], "chill", "indoor", "open"],
+  ["snacktalk", "Snack and Talk", "social", "Gonzaga Cafeteria", "central", "Dec", "Tue", "1:30 PM", ["food", "friends"], ["snacks", "coffee"], "chill", "indoor", "open"],
+  ["musicpool", "Musicians Pool Jam", "org", "MVP Center", "central", "Dec", "Wed", "5:00 PM", ["music", "orgs"], ["acoustic", "performances"], "both", "indoor", "org-exclusive"],
+  ["litnight", "Literary Night", "org", "Rizal Mini Theater", "central", "Dec", "Thu", "6:00 PM", ["literature", "arts"], ["poetry", "essays"], "chill", "indoor", "open"],
+  ["career", "Career Starter Talk", "org", "JGSOM Building", "central", "Jan", "Mon", "4:00 PM", ["orgs", "food"], ["business", "talks"], "chill", "indoor", "open"],
+  ["dance", "Dance Try-it Session", "social", "Blue Eagle Gym", "south", "Jan", "Tue", "5:30 PM", ["wellness", "music"], ["movement", "performances"], "outgoing", "indoor", "open"],
+  ["zenpicnic", "Zen Garden Picnic", "social", "Zen Garden", "central", "Jan", "Wed", "4:30 PM", ["food", "friends"], ["small group", "low pressure"], "chill", "outdoor", "open"],
+  ["hackintro", "Hackathon Intro", "org", "SEC-A Building", "north", "Jan", "Thu", "2:30 PM", ["orgs", "arts"], ["design", "business"], "both", "indoor", "org-exclusive"],
+  ["campustour", "Campus Tour Meetup", "social", "Leong Hall", "north", "Jan", "Fri", "10:00 AM", ["friends", "culture"], ["campus traditions", "arrive together"], "chill", "outdoor", "open"]
+];
+
+additionalEventSeeds.forEach(([id, title, type, location, area, month, day, time, interests, subtags, energy, venue, access]) => {
+  events.push({
+    id,
+    title,
+    type,
+    location,
+    area,
+    month,
+    day,
+    time,
+    deadline: `${day} 12:00 PM`,
+    interests,
+    subtags,
+    energy,
+    commitment: type === "org" ? "1 hour" : "Drop-by",
+    beginner: true,
+    alone: energy !== "outgoing",
+    group: energy === "outgoing" ? "large" : "small",
+    schoolTags: ["SOM", "SOSE", "SOH", "SOSS"],
+    personalityFit: energy === "chill" ? ["chill", "planner", "creative"] : energy === "outgoing" ? ["outgoing", "active"] : ["chill", "outgoing", "creative"],
+    expect: `Drop by ${location}, check in with the host, and join the activity at your own pace.`,
+    goodFor: "Students looking for a low-risk way to meet people or try an Ateneo activity.",
+    bring: "Student ID and anything listed by the organizer.",
+    description: `${energyLabel(energy)} ${type === "org" ? "org event" : "social gathering"} at ${location}.`,
+    venue,
+    access
+  });
+});
+
 const eventMedia = {
   tennis: { venue: "outdoor", access: "open", image: "https://theguidon.com/1112/main/wp-content/uploads/2026/06/UAAP-Season-88-Mens-Football-AdU-vs-Ateneo-John-Molina-800x533.webp", imageCredit: "The GUIDON" },
   stargazing: { venue: "outdoor", access: "open", image: "https://cdn.prod.website-files.com/62fa1472992a3be9d2cfabd4/689378d73440c9b893296bf0_eadd6304d3b8e70665fde4d1fc03bf47_hero-beach-p-800.png", imageCredit: "Ateneo RecWeek" },
@@ -175,7 +283,21 @@ const eventMedia = {
   meco: { venue: "outdoor", access: "org-exclusive", image: "https://theguidon.com/1112/main/wp-content/uploads/2025/09/091225-Cheer-Rally-2025-Llamas-01.jpg", imageCredit: "The GUIDON" }
 };
 
-events.forEach((event) => Object.assign(event, eventMedia[event.id] || { venue: "indoor", access: "open", image: "", imageCredit: "Mock event image" }));
+const defaultEventImages = {
+  org: "https://cdn.prod.website-files.com/62fa1472992a3be9d2cfabd4/68944c6381ff335b2c93640c_bot-p-500.png",
+  social: "https://cdn.prod.website-files.com/62fa1472992a3be9d2cfabd4/68943bc5f9176ad297374e0c_top-p-500.png"
+};
+
+events.forEach((event, index) => {
+  const media = eventMedia[event.id] || {};
+  Object.assign(event, media);
+  event.month = event.month || ["Aug", "Sep", "Oct", "Nov", "Dec"][index % 5];
+  event.dateNumber = event.dateNumber || ((index * 3) % 26) + 2;
+  event.venue = event.venue || "indoor";
+  event.access = event.access || "open";
+  event.image = event.image || defaultEventImages[event.type] || defaultEventImages.social;
+  event.imageCredit = event.imageCredit || "Ateneo RecWeek";
+});
 
 const state = {
   registeredEmail: "",
@@ -183,8 +305,11 @@ const state = {
   activePanel: "welcome",
   activeRoute: "home",
   activeMapCategory: "all",
+  activeMapMonth: "all",
+  activeOverviewMonth: "all",
   activeEventQuick: "all",
   selectedInterestForSubtags: "sports",
+  profileSelectedInterestForSubtags: "sports",
   quickIndex: 0,
   currentEventId: null,
   profile: {
@@ -203,7 +328,6 @@ const state = {
   personalityAnswers: {},
   interestedEventIds: new Set(),
   passedEventIds: new Set(),
-  signedEventIds: new Set(),
   tourIndex: 0,
   theme: localStorage.getItem("tayoTheme") || "light"
 };
@@ -213,6 +337,7 @@ const routeTitles = {
   home: "Home",
   map: "Map",
   quickmatch: "Quick Match",
+  events: "Events",
   profile: "Profile"
 };
 
@@ -220,6 +345,7 @@ const routeSubtitles = {
   home: "Recommended events based on your profile and social style.",
   map: "Event places, campus landmarks, and simple directions.",
   quickmatch: "Review the event queue and decide what to save or join.",
+  events: "Calendar-style overview of the same event set.",
   profile: "Student details used by the matching logic."
 };
 
@@ -227,7 +353,7 @@ const tourSteps = [
   {
     route: "home",
     title: "Home shows your best next moves",
-    body: "This is the student's overview: top recommendation, signup count, profile summary, and the next action."
+    body: "This is the student's overview: top recommendation, interested count, profile summary, and the next action."
   },
   {
     route: "map",
@@ -248,12 +374,19 @@ const tourSteps = [
 
 const mapCategories = [
   ["all", "All"],
+  ["events", "Events"],
   ["food", "Food"],
+  ["parking", "Parking"],
+  ["printing", "Printing"],
+  ["offices", "Offices"],
+  ["misc", "Miscellaneous"],
   ["transport", "Transport"],
   ["study", "Study"],
   ["student-life", "Student life"],
   ["landmarks", "Landmarks"]
 ];
+
+const months = ["all", "Aug", "Sep", "Oct", "Nov", "Dec", "Jan"];
 
 const personalityQuestions = [
   {
@@ -332,6 +465,23 @@ function accessLabel(value) {
   return value === "org-exclusive" ? "Org-exclusive" : "Open to all";
 }
 
+function dateLabel(event) {
+  const meta = monthMeta[event.month];
+  return `${event.month} ${event.dateNumber}, ${meta.year} (${event.day})`;
+}
+
+function deadlineLabel(event) {
+  if (/open/i.test(event.deadline)) return event.deadline;
+  return `${event.month} ${event.dateNumber}, ${monthMeta[event.month].year}, ${event.deadline.replace(/^[A-Za-z]{3}\s*/, "")}`;
+}
+
+function profileNameFromEmail(email) {
+  const local = email.trim().toLowerCase().split("@")[0] || "";
+  const parts = local.split(".").filter(Boolean);
+  const nameParts = parts.length > 1 ? [parts[0], parts[parts.length - 1]] : [parts[0] || "student"];
+  return nameParts.map((part) => part.charAt(0).toUpperCase() + part.slice(1)).join(" ");
+}
+
 function applyTheme() {
   document.body.dataset.theme = state.theme;
   const toggle = qs("#themeToggle");
@@ -358,8 +508,7 @@ function googleMapsDirectionsUrl(destination, origin) {
 }
 
 function openMapsUrl(url) {
-  const opened = window.open(url, "_blank", "noopener,noreferrer");
-  if (!opened) window.location.href = url;
+  window.open(url, "_blank");
 }
 
 function openGoogleDirections(place) {
@@ -401,7 +550,7 @@ function setMessage(id, text, type) {
 
 function showPanel(panel) {
   state.activePanel = panel;
-  qs("#authFlow").classList.toggle("entry-mode", panel === "welcome");
+  qs("#authFlow").classList.toggle("entry-mode", panel === "welcome" || panel === "login");
   qsa(".flow-panel").forEach((item) => item.classList.toggle("active", item.dataset.panel === panel));
   const panelLabel = {
     welcome: "Welcome",
@@ -434,6 +583,7 @@ function showApp(route = "home") {
 }
 
 function restartFlow() {
+  state.passedEventIds.clear();
   qs("#appShell").classList.add("hidden");
   qs("#authFlow").classList.remove("hidden");
   showPanel("welcome");
@@ -446,6 +596,7 @@ function populateCourseList() {
   qs("#profileCourse").innerHTML = courses.map((course) => `<option>${course}</option>`).join("");
   qs("#courseInput").value = state.profile.course;
   qs("#profileCourse").value = state.profile.course;
+  qs("#overviewMonth").innerHTML = months.map((month) => `<option value="${month}">${month === "all" ? "All months" : month}</option>`).join("");
 }
 
 function renderInterestTags() {
@@ -457,6 +608,15 @@ function renderInterestTags() {
   renderSubtags(state.selectedInterestForSubtags);
 }
 
+function renderProfileInterestEditor() {
+  qs("#profileInterestTags").innerHTML = interestGroups.map((group) => `
+    <button class="tag-button ${state.profile.interests.includes(group.id) ? "selected" : ""}" type="button" data-profile-interest="${group.id}">
+      ${group.label}
+    </button>
+  `).join("");
+  renderProfileSubtags(state.profileSelectedInterestForSubtags);
+}
+
 function renderSubtags(groupId) {
   const group = interestGroups.find((item) => item.id === groupId) || interestGroups[0];
   state.selectedInterestForSubtags = group.id;
@@ -466,6 +626,41 @@ function renderSubtags(groupId) {
       ${tag}
     </button>
   `).join("");
+  updateSubtagBulkButtons();
+}
+
+function renderProfileSubtags(groupId) {
+  const group = interestGroups.find((item) => item.id === groupId) || interestGroups[0];
+  state.profileSelectedInterestForSubtags = group.id;
+  qs("#profileSubtagTitle").textContent = `${group.label} subtags`;
+  qs("#profileSubtagGrid").innerHTML = group.subtags.map((tag) => `
+    <button class="tag-button ${state.profile.subtags.includes(tag) ? "selected" : ""}" type="button" data-profile-subtag="${tag}">
+      ${tag}
+    </button>
+  `).join("");
+  updateSubtagBulkButtons();
+}
+
+function setSubtagsForGroup(groupId, selected, renderer = renderSubtags) {
+  const group = interestGroups.find((item) => item.id === groupId);
+  if (!group) return;
+  if (selected) {
+    state.profile.subtags = [...new Set([...state.profile.subtags, ...group.subtags])];
+  } else {
+    state.profile.subtags = state.profile.subtags.filter((tag) => !group.subtags.includes(tag));
+  }
+  renderer(group.id);
+  renderApp();
+}
+
+function updateSubtagBulkButtons() {
+  const current = interestGroups.find((item) => item.id === state.selectedInterestForSubtags) || interestGroups[0];
+  const allSelected = current.subtags.every((tag) => state.profile.subtags.includes(tag));
+  qs("#selectAllSubtags").textContent = allSelected ? "Deselect all" : "Select all";
+
+  const profileCurrent = interestGroups.find((item) => item.id === state.profileSelectedInterestForSubtags) || interestGroups[0];
+  const profileAllSelected = profileCurrent.subtags.every((tag) => state.profile.subtags.includes(tag));
+  qs("#profileSelectAllSubtags").textContent = profileAllSelected ? "Deselect all" : "Select all";
 }
 
 function syncProfileFromSetup() {
@@ -562,17 +757,25 @@ function filteredEvents() {
   const venue = qs("#eventVenue")?.value || "all";
   const access = qs("#eventAccess")?.value || "all";
   return scoredEvents().filter((event) => {
+    const archiveOk = state.activeEventQuick === "archive" ? state.passedEventIds.has(event.id) : !state.passedEventIds.has(event.id) && !state.interestedEventIds.has(event.id);
     const typeOk = type === "all" || event.type === type;
     const energyOk = energy === "all" || event.energy === energy || (event.energy === "both" && (energy === "chill" || energy === "outgoing"));
     const venueOk = venue === "all" || event.venue === venue;
     const accessOk = access === "all" || event.access === access;
     const quickOk =
       state.activeEventQuick === "all" ||
+      state.activeEventQuick === "archive" ||
       (state.activeEventQuick === "top" && event.match.score >= 80) ||
       (state.activeEventQuick === "chill" && (event.energy === "chill" || event.energy === "both")) ||
       (state.activeEventQuick === "outgoing" && (event.energy === "outgoing" || event.energy === "both"));
-    return typeOk && energyOk && venueOk && accessOk && quickOk;
+    return archiveOk && typeOk && energyOk && venueOk && accessOk && quickOk;
   });
+}
+
+function currentQuickMatchEvent() {
+  const list = filteredEvents();
+  if (state.quickIndex >= list.length) state.quickIndex = 0;
+  return list[state.quickIndex] || null;
 }
 
 function renderFirstEventGrid() {
@@ -606,7 +809,10 @@ function renderApp() {
   renderHome();
   renderMap();
   renderQuickMatch();
+  renderEventOverview();
+  renderProfileInterestEditor();
   renderProfile();
+  updateSubtagBulkButtons();
 }
 
 function renderTopProfile() {
@@ -618,26 +824,32 @@ function renderTopProfile() {
 
 function renderHome() {
   const type = personalityTypes[state.profile.personality];
-  const topEvent = scoredEvents()[0];
+  const topEvent = currentQuickMatchEvent();
   qs("#homeTypeLabel").textContent = type.badge;
   qs("#homeHeadline").textContent = `Hi ${state.profile.name.split(" ")[0]}, your matches are ready.`;
   qs("#homeSummary").textContent = `${state.profile.yearLevel} in ${state.profile.course}. Recommendations prioritize ${type.title.toLowerCase()} events and the tags you selected during onboarding.`;
-  qs("#matchCountStat").textContent = events.length;
+  qs("#matchCountStat").textContent = filteredEvents().length;
   qs("#interestCountStat").textContent = state.profile.interests.length;
-  qs("#signedCountStat").textContent = state.signedEventIds.size;
-  qs("#homeTopEventTitle").textContent = topEvent.title;
-  qs("#homeTopEventBody").textContent = `${topEvent.match.score}% match. ${topEvent.description}`;
-  qs("#homeCards").innerHTML = [
-    ["Best fit", `${topEvent.title} is currently the strongest recommendation.`],
-    ["Saved profile", `${state.profile.yearLevel} · ${state.profile.school} · ${state.profile.course}`],
-    ["Interest mix", state.profile.interests.map(labelCategory).join(", ")],
-    ["Next action", "Open Quick Match to review the queue."]
-  ].map(([title, body]) => `
-    <article class="card">
-      <h3>${title}</h3>
-      <p>${body}</p>
-    </article>
-  `).join("");
+  qs("#interestedCountStat").textContent = state.interestedEventIds.size;
+  qs("#homeTopEventTitle").textContent = topEvent ? topEvent.title : "No recommendations left";
+  qs("#homeTopEventBody").textContent = topEvent ? `${topEvent.match.score}% match. ${dateLabel(topEvent)}. ${topEvent.description}` : "Restore items from Archive or restart the flow to review everything again.";
+  const savedEvents = scoredEvents().filter((event) => state.interestedEventIds.has(event.id));
+  qs("#homeSavedEvents").innerHTML = savedEvents.length
+    ? savedEvents.map((event) => `
+      <article class="saved-event">
+        <img src="${event.image}" alt="${event.title}" loading="lazy">
+        <span>
+          <strong>${event.title}</strong>
+          <small>${event.month} ${event.dateNumber}, ${monthMeta[event.month].year} · ${event.location}</small>
+        </span>
+        <div class="saved-actions">
+          <button class="secondary" type="button" data-interested-event="${event.id}" data-stay-route="home">Unsave</button>
+          <button class="primary" type="button" data-signup-event="${event.id}">Sign up</button>
+        </div>
+      </article>
+    `).join("")
+    : `<article class="empty-state"><h3>No interested events yet</h3><p>Tap Interested in Quick Match or event details and they will show up here.</p></article>`;
+  qs("#homeCards").innerHTML = "";
 }
 
 function renderMapFilters() {
@@ -651,26 +863,75 @@ function renderMap() {
   const board = qs("#mapBoard");
   if (!board) return;
   board.querySelectorAll(".place-pin").forEach((pin) => pin.remove());
-  const filtered = places.filter((place) => state.activeMapCategory === "all" || place.category === state.activeMapCategory);
+  const filtered =
+    state.activeMapCategory === "events"
+      ? events
+          .map((event) => {
+            const place = places.find((item) => event.location.includes(item.name) || item.nearby?.includes(event.title)) || places.find((item) => item.name === event.location) || places[0];
+            return { ...place, id: `event-${event.id}`, name: event.title, category: "events", short: event.description, why: event.expect, nearby: [event.location, `${event.month} ${event.dateNumber}, ${monthMeta[event.month].year} · ${event.day}, ${event.time}`], mapQuery: `${event.location}, Ateneo de Manila University, Quezon City` };
+          })
+      : places.filter((place) => state.activeMapCategory === "all" || place.category === state.activeMapCategory);
   filtered.forEach((place) => {
     const pin = document.createElement("button");
     pin.className = `place-pin ${place.category}`;
     pin.type = "button";
     pin.style.left = `${place.x}%`;
     pin.style.top = `${place.y}%`;
-    pin.textContent = place.category === "food" ? "F" : place.category === "transport" ? "T" : place.category === "study" ? "S" : place.category === "student-life" ? "L" : "M";
+    pin.textContent = categoryPinLabels[place.category] || "M";
     pin.setAttribute("aria-label", place.name);
-    pin.addEventListener("click", () => selectPlace(place.id));
+    pin.addEventListener("click", () => selectPlace(place.id, place));
     board.appendChild(pin);
   });
-  selectPlace((filtered[0] || places[0]).id, false);
+  selectPlace((filtered[0] || places[0]).id, filtered[0] || places[0]);
 }
 
-function selectPlace(placeId) {
-  const place = places.find((item) => item.id === placeId) || places[0];
+function renderEventOverview() {
+  qs("#overviewMonth").value = state.activeOverviewMonth;
+  const visible = events.filter((event) => state.activeOverviewMonth === "all" || event.month === state.activeOverviewMonth);
+  const grouped = months.filter((month) => month !== "all").map((month) => [month, visible.filter((event) => event.month === month)]).filter(([, items]) => items.length);
+  qs("#eventCalendar").innerHTML = grouped.map(([month, items]) => `
+    <section class="calendar-month">
+      <h3>${month} ${monthMeta[month].year}</h3>
+      ${renderMonthCalendar(month, items)}
+    </section>
+  `).join("");
+}
+
+function renderMonthCalendar(month, items) {
+  const meta = monthMeta[month];
+  const daysInMonth = new Date(meta.year, meta.monthIndex + 1, 0).getDate();
+  const firstDay = new Date(meta.year, meta.monthIndex, 1).getDay();
+  const byDate = new Map();
+  items.forEach((event) => {
+    if (!byDate.has(event.dateNumber)) byDate.set(event.dateNumber, []);
+    byDate.get(event.dateNumber).push(event);
+  });
+  const blanks = Array.from({ length: firstDay }, () => `<div class="calendar-cell muted-cell"></div>`);
+  const days = Array.from({ length: daysInMonth }, (_, index) => {
+    const date = index + 1;
+    const dateEvents = byDate.get(date) || [];
+    return `
+      <div class="calendar-cell">
+        <strong>${date}</strong>
+        ${dateEvents.map((event) => `<button class="calendar-event" type="button" data-details="${event.id}">${event.title}</button>`).join("")}
+      </div>
+    `;
+  });
+  return `<div class="calendar-weekdays"><span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span></div><div class="calendar-days">${blanks.join("")}${days.join("")}</div>`;
+}
+
+function selectPlace(placeId, placeOverride) {
+  const place = placeOverride || places.find((item) => item.id === placeId) || places[0];
+  const contactRows = [place.contact && ["Contact", place.contact], place.phone && ["Phone", place.phone], place.email && ["Email", place.email], place.officeHours && ["Hours", place.officeHours]]
+    .filter(Boolean)
+    .map(([label, value]) => `<p><strong>${label}:</strong> ${value}</p>`)
+    .join("");
   qsa(".place-pin").forEach((pin) => pin.classList.toggle("active", pin.getAttribute("aria-label") === place.name));
   qs("#placePanel").innerHTML = `
-    <div class="photo-block">${place.name}</div>
+    <div class="photo-block photo-needed">
+      <strong>${place.name}</strong>
+      <span>Photo needed</span>
+    </div>
     <div class="badge-row">
       <span class="badge safe">${labelCategory(place.category)}</span>
       <span class="badge">${areaLabel(place.area)}</span>
@@ -678,10 +939,11 @@ function selectPlace(placeId) {
     <h3>${place.name}</h3>
     <p>${place.short}</p>
     <p><strong>Why students go:</strong> ${place.why}</p>
+    ${contactRows}
     <p><strong>Nearby:</strong> ${place.nearby.join(", ")}</p>
     <button class="primary" type="button" id="directionsButton">Open in Google Maps</button>
   `;
-  qs("#routeCard").innerHTML = `<h3>Directions</h3><p>Open Google Maps for a live route from your current location.</p>`;
+  renderRoute(place);
   qs("#directionsButton").addEventListener("click", () => openGoogleDirections(place));
 }
 
@@ -699,15 +961,23 @@ function renderRoute(place) {
 
 function renderQuickMatch() {
   const list = filteredEvents();
-  qs("#eventCount").textContent = `Showing ${list.length} of ${events.length} events`;
+  qsa("[data-event-quick]").forEach((item) => item.classList.toggle("active", item.dataset.eventQuick === state.activeEventQuick));
+  qs("#eventCount").textContent = state.activeEventQuick === "archive" ? `Archive: ${list.length} passed events` : `Showing ${list.length} of ${events.length} events`;
   if (state.quickIndex >= list.length) state.quickIndex = 0;
-  renderSwipeCard(list[state.quickIndex] || scoredEvents()[0]);
+  renderSwipeCard(currentQuickMatchEvent());
   renderEventList(list);
 }
 
 function renderSwipeCard(event) {
-  if (!event) return;
-  qs("#swipeCard").innerHTML = `
+  const swipeCard = qs("#swipeCard");
+  if (!event) {
+    delete swipeCard.dataset.details;
+    swipeCard.innerHTML = `<div class="empty-state"><h3>${state.activeEventQuick === "archive" ? "Archive is empty" : "No recommendations left"}</h3><p>${state.activeEventQuick === "archive" ? "Passed events will appear here." : "Use Archive to restore passed events or restart the flow."}</p></div>`;
+    return;
+  }
+  const archived = state.activeEventQuick === "archive";
+  swipeCard.dataset.details = event.id;
+  swipeCard.innerHTML = `
     <figure class="event-photo large">
       <img src="${event.image}" alt="${event.title}" loading="lazy">
       <figcaption>${event.imageCredit}</figcaption>
@@ -722,7 +992,7 @@ function renderSwipeCard(event) {
     <h3>${event.title}</h3>
     <p>${event.description}</p>
     <div class="meta">
-      <span>${event.day}, ${event.time}</span>
+      <span>${dateLabel(event)}, ${event.time}</span>
       <span>${event.location}</span>
       <span>${event.commitment}</span>
       <span>${event.alone ? "Okay alone" : "Better with buddy"}</span>
@@ -730,19 +1000,17 @@ function renderSwipeCard(event) {
     <div class="progress" aria-label="Match score"><span style="width:${event.match.score}%"></span></div>
     <p><strong>Why it matches:</strong> ${event.match.reasons.slice(0, 2).join(". ")}.</p>
     <div class="swipe-actions">
-      <button class="ghost" type="button" data-pass-event="${event.id}">Pass</button>
-      <button class="primary" type="button" data-interested-event="${event.id}">Interested</button>
+      ${archived ? `<button class="secondary" type="button" data-restore-event="${event.id}">Restore</button>` : `<button class="ghost" type="button" data-pass-event="${event.id}">Pass</button><button class="primary" type="button" data-interested-event="${event.id}">Interested</button>`}
     </div>
     <div class="event-actions">
-      <button class="secondary" type="button" data-details="${event.id}">Details</button>
-      <button class="ghost" type="button" data-signup-event="${event.id}">${state.signedEventIds.has(event.id) ? "Signed up" : "Sign up"}</button>
+      <button class="ghost" type="button" data-signup-event="${event.id}">Sign up</button>
     </div>
   `;
 }
 
 function renderEventList(list) {
   qs("#eventList").innerHTML = list.map((event) => `
-    <article class="event-row">
+    <article class="event-row" data-details="${event.id}">
       <img class="event-thumb" src="${event.image}" alt="${event.title}" loading="lazy">
       <div class="event-row-body">
         <div class="badge-row">
@@ -755,13 +1023,12 @@ function renderEventList(list) {
         <p>${event.description}</p>
         <div class="meta">
           <span>${event.location}</span>
-          <span>${event.day}, ${event.time}</span>
-          <span>${event.deadline}</span>
+          <span>${dateLabel(event)}, ${event.time}</span>
+          <span>Deadline: ${deadlineLabel(event)}</span>
         </div>
         <div class="event-actions">
-          <button class="ghost" type="button" data-pass-event="${event.id}">Pass</button>
-          <button class="secondary" type="button" data-details="${event.id}">Details</button>
-          <button class="primary" type="button" data-signup-event="${event.id}">${state.signedEventIds.has(event.id) ? "Signed up" : "Sign up"}</button>
+          ${state.activeEventQuick === "archive" ? `<button class="secondary" type="button" data-restore-event="${event.id}">Restore</button>` : `<button class="ghost" type="button" data-list-pass-event="${event.id}">Pass</button><button class="secondary" type="button" data-interested-event="${event.id}">Interested</button>`}
+          <button class="primary" type="button" data-signup-event="${event.id}">Sign up</button>
         </div>
       </div>
     </article>
@@ -813,7 +1080,7 @@ function openEventDetail(eventId) {
     <span class="badge access-${event.access}">${accessLabel(event.access)}</span>
   `;
   qs("#detailTitle").textContent = event.title;
-  qs("#detailSubtitle").textContent = `${event.day}, ${event.time} - ${event.location} - Deadline: ${event.deadline}`;
+  qs("#detailSubtitle").textContent = `${dateLabel(event)}, ${event.time} - ${event.location} - Deadline: ${deadlineLabel(event)}`;
   qs("#detailWhy").textContent = `TAYO matched this against ${state.profile.yearLevel}, ${state.profile.course}, selected interests, subtags, and ${personalityTypes[state.profile.personality].title}.`;
   qs("#detailReasons").innerHTML = event.match.reasons.map((reason) => `<li><strong>Match reason:</strong> ${reason}</li>`).join("");
   qs("#detailExpect").textContent = event.expect;
@@ -829,6 +1096,7 @@ function openEventDetail(eventId) {
     <li><strong>Going alone:</strong> ${event.alone ? "Okay to attend alone." : "TAYO recommends going with someone."}</li>
   `;
   qs("#detailStatus").textContent = "";
+  qs("#modalInterested").textContent = state.interestedEventIds.has(event.id) ? "Unsave" : "Interested";
   qs("#eventDetail").classList.add("open");
 }
 
@@ -836,25 +1104,41 @@ function closeEventDetail() {
   qs("#eventDetail").classList.remove("open");
 }
 
-function markInterested(eventId) {
-  state.interestedEventIds.add(eventId);
-  state.quickIndex += 1;
+function markInterested(eventId, options = {}) {
+  const wasSaved = state.interestedEventIds.has(eventId);
+  if (wasSaved) {
+    state.interestedEventIds.delete(eventId);
+  } else {
+    state.interestedEventIds.add(eventId);
+  }
   renderApp();
-  routeTo("quickmatch");
+  if (options.route !== false) routeTo(options.route || "quickmatch");
 }
 
 function passEvent(eventId) {
   state.passedEventIds.add(eventId);
-  state.quickIndex += 1;
   renderApp();
   routeTo("quickmatch");
 }
 
-function signupEvent(eventId) {
-  state.signedEventIds.add(eventId);
-  state.interestedEventIds.add(eventId);
+function passListEvent(eventId) {
+  state.passedEventIds.add(eventId);
+  renderApp();
+  routeTo("quickmatch");
+}
+
+function restoreEvent(eventId) {
+  state.passedEventIds.delete(eventId);
+  state.activeEventQuick = "all";
+  state.quickIndex = 0;
+  renderApp();
+  routeTo("quickmatch");
+}
+
+function signupEvent(eventId, options = {}) {
   renderApp();
   if (state.activeRoute) routeTo(state.activeRoute);
+  if (options.external !== false) openMapsUrl("https://www.mcdonalds.com/us/en-us/family-fun-hub/get-creative.html");
 }
 
 function openTutorial() {
@@ -885,7 +1169,8 @@ function renderTourStep() {
 }
 
 function bindListeners() {
-  qs("#panelistShortcut").addEventListener("click", () => {
+  const panelistShortcut = qs("#panelistShortcut");
+  if (panelistShortcut) panelistShortcut.addEventListener("click", () => {
     state.registeredEmail = state.profile.email;
     renderPersonalityResult();
     showApp("home");
@@ -900,6 +1185,7 @@ function bindListeners() {
     }
     state.registeredEmail = email;
     state.profile.email = email;
+    state.profile.name = profileNameFromEmail(email);
     setMessage("#signupMessage", "Ateneo email verified. Continue to user selection.", "success");
     showPanel("role");
   });
@@ -913,6 +1199,7 @@ function bindListeners() {
     }
     state.registeredEmail = email;
     state.profile.email = email;
+    state.profile.name = profileNameFromEmail(email);
     setMessage("#loginMessage", "Successful login.", "success");
     showApp("home");
   });
@@ -957,6 +1244,12 @@ function bindListeners() {
       state.profile.subtags.push(subtag);
     }
     renderSubtags(state.selectedInterestForSubtags);
+  });
+
+  qs("#selectAllSubtags").addEventListener("click", () => {
+    const group = interestGroups.find((item) => item.id === state.selectedInterestForSubtags) || interestGroups[0];
+    const allSelected = group.subtags.every((tag) => state.profile.subtags.includes(tag));
+    setSubtagsForGroup(group.id, !allSelected, renderSubtags);
   });
 
   qs("#continueToPersonality").addEventListener("click", () => {
@@ -1009,7 +1302,7 @@ function bindListeners() {
   qs("#goHomeFromFlow").addEventListener("click", () => showApp("home"));
   qs("#goQuickMatchFromFlow").addEventListener("click", () => {
     const selected = qs("[data-first-event].selected");
-    if (selected) signupEvent(selected.dataset.firstEvent);
+    if (selected) signupEvent(selected.dataset.firstEvent, { external: false });
     showApp("quickmatch");
   });
 
@@ -1037,11 +1330,49 @@ function bindListeners() {
     state.activeMapCategory = button.dataset.mapFilter;
     renderMap();
   });
+  qs("#overviewMonth").addEventListener("input", () => {
+    state.activeOverviewMonth = qs("#overviewMonth").value;
+    renderEventOverview();
+  });
 
   qs("#eventType").addEventListener("input", renderQuickMatch);
   qs("#eventEnergy").addEventListener("input", renderQuickMatch);
   qs("#eventVenue").addEventListener("input", renderQuickMatch);
   qs("#eventAccess").addEventListener("input", renderQuickMatch);
+
+  qs("#profileInterestTags").addEventListener("click", (event) => {
+    const button = event.target.closest("[data-profile-interest]");
+    if (!button) return;
+    const interest = button.dataset.profileInterest;
+    state.profileSelectedInterestForSubtags = interest;
+    if (state.profile.interests.includes(interest)) {
+      state.profile.interests = state.profile.interests.filter((item) => item !== interest);
+    } else {
+      state.profile.interests.push(interest);
+    }
+    renderApp();
+    routeTo("profile");
+  });
+
+  qs("#profileSubtagGrid").addEventListener("click", (event) => {
+    const button = event.target.closest("[data-profile-subtag]");
+    if (!button) return;
+    const subtag = button.dataset.profileSubtag;
+    if (state.profile.subtags.includes(subtag)) {
+      state.profile.subtags = state.profile.subtags.filter((item) => item !== subtag);
+    } else {
+      state.profile.subtags.push(subtag);
+    }
+    renderApp();
+    routeTo("profile");
+  });
+
+  qs("#profileSelectAllSubtags").addEventListener("click", () => {
+    const group = interestGroups.find((item) => item.id === state.profileSelectedInterestForSubtags) || interestGroups[0];
+    const allSelected = group.subtags.every((tag) => state.profile.subtags.includes(tag));
+    setSubtagsForGroup(group.id, !allSelected, renderProfileSubtags);
+    routeTo("profile");
+  });
 
   qsa("[data-event-quick]").forEach((button) => {
     button.addEventListener("click", () => {
@@ -1058,7 +1389,10 @@ function bindListeners() {
     const details = event.target.closest("[data-details]");
     const interested = event.target.closest("[data-interested-event]");
     const pass = event.target.closest("[data-pass-event]");
+    const listPass = event.target.closest("[data-list-pass-event]");
+    const restore = event.target.closest("[data-restore-event]");
     const signup = event.target.closest("[data-signup-event]");
+    const command = event.target.closest("[data-interested-event], [data-pass-event], [data-list-pass-event], [data-restore-event], [data-signup-event], [data-auth-screen]");
     if (authScreen) {
       event.preventDefault();
       if (authScreen.dataset.authScreen === "tutorial") {
@@ -1067,9 +1401,11 @@ function bindListeners() {
         showPanel(authScreen.dataset.authScreen);
       }
     }
-    if (details) openEventDetail(details.dataset.details);
-    if (interested) markInterested(interested.dataset.interestedEvent);
+    if (details && !command) openEventDetail(details.dataset.details);
+    if (interested) markInterested(interested.dataset.interestedEvent, interested.dataset.stayRoute ? { advance: false, route: interested.dataset.stayRoute } : {});
     if (pass) passEvent(pass.dataset.passEvent);
+    if (listPass) passListEvent(listPass.dataset.listPassEvent);
+    if (restore) restoreEvent(restore.dataset.restoreEvent);
     if (signup) signupEvent(signup.dataset.signupEvent);
   });
 
@@ -1080,20 +1416,17 @@ function bindListeners() {
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") closeEventDetail();
   });
-  qs("#modalPass").addEventListener("click", () => {
-    if (!state.currentEventId) return;
-    passEvent(state.currentEventId);
-    closeEventDetail();
-  });
   qs("#modalInterested").addEventListener("click", () => {
     if (!state.currentEventId) return;
-    markInterested(state.currentEventId);
-    qs("#detailStatus").textContent = "Marked interested.";
+    const wasSaved = state.interestedEventIds.has(state.currentEventId);
+    markInterested(state.currentEventId, { advance: false, route: false });
+    qs("#modalInterested").textContent = wasSaved ? "Interested" : "Unsave";
+    qs("#detailStatus").textContent = wasSaved ? "Removed from interested events." : "Marked interested.";
   });
   qs("#modalSignup").addEventListener("click", () => {
     if (!state.currentEventId) return;
     signupEvent(state.currentEventId);
-    qs("#detailStatus").textContent = "Signed up for prototype testing.";
+    qs("#detailStatus").textContent = "Opening signup placeholder in a new tab.";
   });
 
   qs("#profileEditForm").addEventListener("submit", (event) => {
